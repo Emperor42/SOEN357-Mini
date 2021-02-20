@@ -3,3 +3,9 @@
   color: #fff;
 }
 
+.gradient-custom-content {
+  background: linear-gradient(120deg,#ff6961,#ffb347);
+  box-shadow: 5px 10px 5px #888888;
+  color: #fff;
+}
+
