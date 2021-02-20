@@ -9,3 +9,8 @@
   color: #fff;
 }
 
+.nav-link.active {
+  color: #fff;
+  background-color: #b19cd9;
+}
+

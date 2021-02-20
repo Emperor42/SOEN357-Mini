@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SOEN 357 Mini Project</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Social-Icons.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+<script>
+$(document).on('click','.nav-link.active', function(){
+  var href = $(this).attr('href').substring(1);
+  $(this).removeClass('active');
+  $('.tab-pane[id="'+ href +'"]').removeClass('active');
+})
+</script>
+</head>
+
+<body style="background: #cfcfc4;">
+    <div>
+        <ul class="nav nav-pills nav-fill" role="tablist" style="box-shadow: 5px 10px 20px 3px rgb(33, 37, 41);">
+            <li class="nav-item" role="presentation" data-bss-hover-animate="rubberBand"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-1"><i class="fa fa-line-chart"></i></a></li>
+            <li class="nav-item" role="presentation" data-bss-hover-animate="rubberBand"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-2"><i class="fa fa-chevron-down"></i></a></li>
+            <li class="nav-item" role="presentation" data-bss-hover-animate="rubberBand"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-3"><i class="fa fa-cogs"></i></a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" role="tabpanel" id="tab-1">
+                <div class="jumbotron" style="margin-bottom: 0;background: #ffb347;">
+                    <h4>Weekly Progress</h4>
+                    <div><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Screen Time&quot;,&quot;backgroundColor&quot;:&quot;rgba(78,115,223,0)&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;98&quot;,&quot;53&quot;,&quot;62&quot;,&quot;45&quot;,&quot;37&quot;,&quot;15&quot;],&quot;fill&quot;:true}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:true,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawTicks&quot;:true,&quot;drawOnChartArea&quot;:false}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawTicks&quot;:true,&quot;drawOnChartArea&quot;:false}}]}}}"></canvas></div>
+                </div>
+                <div class="jumbotron" style="background: #ff6961;margin-bottom: 0;">
+                    <h4>Daily Progress</h4>
+                    <div class="progress" style="background: #cfcfc4;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%;"><span class="sr-only">57%</span></div>
+                    </div>
+                </div>
+                <div class="jumbotron" style="margin-bottom: 0;background: #b19cd9;">
+                    <h4>Daily Goals</h4>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Eat Healthy</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-1">Work Out</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Practice Chinese</label></div>
+                </div>
+            </div>
+            <div class="tab-pane" role="tabpanel" id="tab-2">
+                <div class="container">
+                    <div class="row" style="margin-top: 10px;padding-top: 5px;">
+                        <div class="col">
+                            <h1 class="float-left">App List</h1><input class="float-right" type="search" name="Search" placeholder="Search for app">
+                        </div>
+                    </div>
+                </div>
+                <div class="social-icons" style="background: #cfcfc4;"><a href="#"><i class="icon ion-social-twitter" style="color: #cfcfc4;background: #b19cd9;"></i></a><a href="#"><i class="icon ion-social-facebook" style="color: #ff6961;"></i></a><a href="#"><i class="icon ion-social-snapchat" style="color: #ff6961;"></i></a><a href="#"><i class="icon ion-social-youtube" style="color: #ff6961;"></i></a></div>
+                <div class="social-icons" style="background: #cfcfc4;"><a href="#"><i class="icon ion-social-twitter" style="color: #ff6961;"></i></a><a href="#"><i class="icon ion-social-facebook" style="color: #ff6961;"></i></a><a href="#"><i class="icon ion-social-snapchat" style="background: #b19cd9;color: #cfcfc4;"></i></a><a href="#"><i class="icon ion-social-youtube" style="color: #ff6961;"></i></a></div>
+                <div class="social-icons" style="background: #cfcfc4;"><a href="#"><i class="icon ion-social-twitter" style="color: #ff6961;"></i></a><a href="#"><i class="icon ion-social-facebook" style="background: #b19cd9;color: #cfcfc4;"></i></a><a href="#"><i class="icon ion-social-snapchat" style="color: #ff6961;"></i></a><a href="#"><i class="icon ion-social-youtube" style="background: #b19cd9;color: #cfcfc4;"></i></a></div>
+            </div>
+            <div class="tab-pane active" role="tabpanel" id="tab-3">
+                <div class="jumbotron" style="background: #ffb347;">
+                    <h3>Options</h3>
+                </div>
+                <form>
+                    <fieldset style="background: #b19cd9;"><label for="screen-time">Screen Time</label><input class="custom-range" type="range" id="screen-time" min="0" max="240" name="Screen Time">
+                        <legend style="background: #ffb347;">Device Options</legend>
+                    </fieldset>
+                    <fieldset style="background: #ff6961;"><label for="reward-time">Task Reward Reward&nbsp;</label><input class="custom-range" type="range" id="reward-time" min="0" max="240" name="Screen Time">
+                        <legend style="background: #ffb347;">Device Options</legend>
+                    </fieldset>
+                    <fieldset style="background: #b19cd9;">
+                        <legend style="background: #ffb347;">Device Options</legend>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Filter Blue Light</label></div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
